@@ -1,0 +1,20 @@
+{
+  "name": "rollup-starter-app",
+  "devDependencies": {
+    "eslint-plugin-filenames": "latest",
+    "rollup": "latest",
+    "rollup-plugin-closure-compiler": "latest",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-copy": "latest",
+    "rollup-plugin-eslint": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-watch": "latest",
+    "serve": "latest"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "node_modules/.bin/rollup -c",
+    "dev": "node_modules/.bin/rollup -c -w",
+    "start": "serve public"
+  }
+}
