@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import closure from 'rollup-plugin-closure-compiler';
 import copy from 'rollup-plugin-copy';
 import eslint from 'rollup-plugin-eslint';
+import execute from 'rollup-plugin-execute'
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
@@ -20,7 +21,8 @@ export default {
 		production && closure({
       compilationLevel: 'ADVANCED',
       warningLevel: 'QUIET'
-    })
+    }),
+    production && execute('rm -f public/bundle.js.map')
 	],
-	sourceMap: true
+	sourceMap: !production
 };

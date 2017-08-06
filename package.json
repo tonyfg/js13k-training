@@ -7,6 +7,7 @@
     "rollup-plugin-commonjs": "latest",
     "rollup-plugin-copy": "latest",
     "rollup-plugin-eslint": "latest",
+    "rollup-plugin-execute": "latest",
     "rollup-plugin-node-resolve": "latest",
     "rollup-watch": "latest",
     "serve": "latest"
